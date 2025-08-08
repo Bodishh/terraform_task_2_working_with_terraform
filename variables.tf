@@ -1,6 +1,7 @@
 variable "azregion" {
-  type    = string
-  default = "West Europe"
+  description = "The Azure region where the resources will be deployed."
+  type        = string
+  default     = "West Europe"
 }
 
 variable "rgname" {
@@ -9,8 +10,7 @@ variable "rgname" {
 }
 
 variable "storageaccount" {
-  type    = string
-  default = "examplestorageacc"
+  type = string
 }
 
 variable "containername" {
