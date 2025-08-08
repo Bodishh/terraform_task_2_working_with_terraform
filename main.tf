@@ -21,7 +21,7 @@ data "archive_file" "package" {
   type        = "zip"
   source_dir  = path.module
   output_path = "${path.module}/archive.zip"
-  excludes    = ["app.zip", ".terraform/", "terraform.tfstate", "terraform.tfstate.backup"]
+  excludes    = ["app.zip", ".terraform/", "terraform.tfstate", "terraform.tfstate.backup","archive.zip"]
 }
 
 resource "azurerm_storage_blob" "blob" {
